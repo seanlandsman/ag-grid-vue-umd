@@ -1,16 +1,17 @@
 {
-  "name": "test-vuebuild-umd",
-  "version": "1.0.0",
+  "name": "ag-grid-vue-umd",
+  "version": "20.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "vue-cli-service build --target lib --name ag-grid-vue-test index.js "
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "ag-grid-vue": "^19.1.0",
-    "@vue/cli-service": "^3.2.0",
-    "vue-template-compiler": "^2.5.17"
+    "ag-grid-community": "^19.1.0",
+    "@vue/cli-service": "3.2.3",
+    "vue-template-compiler": "2.5.21"
   }
 }
