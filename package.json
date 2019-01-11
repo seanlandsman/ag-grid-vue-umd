@@ -9,8 +9,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "ag-grid-vue": "^19.1.0",
-    "ag-grid-community": "^19.1.0",
+    "ag-grid-vue": "^20.0.0",
+    "ag-grid-community": "^20.0.0",
     "@vue/cli-service": "3.2.3",
     "vue-template-compiler": "2.5.21"
   }
