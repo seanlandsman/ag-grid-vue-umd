@@ -1,6 +1,6 @@
 {
   "name": "ag-grid-vue-umd",
-  "version": "20.0.0",
+  "version": "24.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "ag-grid-vue": "^20.0.0",
-    "ag-grid-community": "^20.0.0",
+    "ag-grid-vue": "^24.0.0",
+    "ag-grid-community": "^24.0.0",
     "@vue/cli-service": "3.2.3",
     "vue-template-compiler": "2.5.21"
   }
