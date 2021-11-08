@@ -11,10 +11,48 @@
 <script src="http://unpkg.com/vue/dist/vue.js"></script>
 <script src="./node_modules/ag-grid-community/dist/ag-grid-community.min.js"></script>
 <script src="./node_modules/ag-grid-vue/dist/ag-grid-vue.umd.min.js"></script>
-<script src="dist/ag-grid-vue-test.umd.js"></script>
 <script>
+    var App = {
+        name: 'App',
+        template: `
+            <ag-grid-vue style="width: 500px; height: 150px;"
+                         class="ag-theme-balham"
+                         :columnDefs="columnDefs"
+                         :rowData="rowData">
+            </ag-grid-vue>
+        `,
+        data() {
+            return {
+                columnDefs: null,
+                rowData: null
+            }
+        },
+        components: {
+            // up to ag-grid-vue 26.1.0
+            AgGridVue: window['ag-grid-vue'].AgGridVue
+            // from ag-grid-vue 26.2.0
+            // AgGridVue: agGridVue.AgGridVue
+        },
+        beforeMount() {
+            this.columnDefs = [
+                {headerName: 'Make', field: 'make'},
+                {headerName: 'Model', field: 'model'},
+                {headerName: 'Price', field: 'price'}
+            ];
+
+            this.rowData = [
+                {make: 'Toyota', model: 'Celica', price: 35000},
+                {make: 'Ford', model: 'Mondeo', price: 32000},
+                {make: 'Porsche', model: 'Boxter', price: 72000}
+            ];
+        }
+    };
+
     var app = new Vue({
         el: '#app',
+        components: {
+            'ag-grid-app': App
+        }
     })
 </script>
 </body>
